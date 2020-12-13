@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Destructive Test">
+    <test name="Destructive Test">
+        <classes>
+            <class name="hk.gov.weather.data.test.DestructiveTest">
+                <methods>
+                    <include name="TC1_validates_response_query_parameter_dataType_typo"/>
+                    <include name="TC2_validates_not_allowed_request_method"/>
+                    <include name="TC3_validates_message_page_not_found_invalid_path_parameter"/>
+                    <include name="TC4_validates_message_incorrect_query_parameter_dataType_value"/>
+                    <include name="TC5_validates_message_without_query_parameter"/>
+                    <include name="TC6_validates_response_query_parameter_lang_typo"/>
+                    <include name="TC7_validates_message_unsupported_language"/>
+                    <include name="TC8_validates_message_file_not_found_path_parameter_case_sensitive"/>
+
+
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

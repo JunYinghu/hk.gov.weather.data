@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="smoke test">
+    <test name="smoke test">
+        <classes>
+            <class name="hk.gov.weather.data.test.SmokeTest">
+                <methods>
+                    <include name="TC1_validates_get_current_weather_report_response_basic"/>
+                    <include name="TC2_validates_get_current_weather_report_response_headers"/>
+                    <include name="TC3_validates_get_current_weather_report_schema"/>
+                    <include name="TC4_validates_get_current_weather_report_language"/>
+                    <include name="TC5_validates_get_current_weather_language_default"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

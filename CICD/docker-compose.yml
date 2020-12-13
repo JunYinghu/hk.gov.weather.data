@@ -1,0 +1,43 @@
+version: '3.5'
+
+services:
+  regressiontestsuit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hk.gov.weather.data
+    command: mvn clean test
+    working_dir: ${APP_PATH:-/hk.gov.weather.data}
+    volumes:
+      - ${APP_PATH:-./..}:${APP_PATH:-/hk.gov.weather.data}
+      - mvn_home:${APP_PATH:-/root/.m2home}
+    environment:
+      TZ: Asia/Singapore
+      MAVEN_HOME: ${APP_PATH:-/root/.m2home}
+    networks:
+      - backend
+
+  smoketestsuit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hk.gov.weather.data
+    command: mvn clean test -Dtest=SmokeTest
+    working_dir: ${APP_PATH:-/hk.gov.weather.data}
+    volumes:
+      - ${APP_PATH:-./..}:${APP_PATH:-/hk.gov.weather.data}
+      - mvn_home:${APP_PATH:-/root/.m2home}
+    environment:
+      TZ: Asia/Singapore
+      MAVEN_HOME: ${APP_PATH:-/root/.m2home}
+    networks:
+      - backend
+
+
+networks:
+  backend:
+    name: ${APP_NAME:-hk.gov.weather.data}-${CONTAINER_SUFFIX:-local}
+
+volumes:
+  mvn_home:
+    name: ${APP_NAME:-hk.gov.weather.data}-maven

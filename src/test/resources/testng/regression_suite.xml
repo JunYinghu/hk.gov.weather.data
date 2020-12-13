@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- below parameters can be fetched from jenkins -->
+<suite name="Current Weather Report">
+    <parameter name="language"
+               value="sc"/> <!-- default en (English), the value can be tc (Traditional Chinese),sc (Simplified Chinese) -->
+    <parameter name="pathParameter" value="weather"/> <!-- current test script only available for weather-->
+    <suite-files>
+        <suite-file path="testng_smokeTest.xml"/>
+        <suite-file path="testng_destructiveTest.xml"/>
+    </suite-files>
+</suite>
