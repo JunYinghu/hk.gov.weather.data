@@ -9,16 +9,16 @@ test cases runner has been tested on Window
 
 ## Table of Contents
 
-- [Prerequisites](##Prerequisites)
-- [Technical Stack](##Technical-Stack)
-- [Installation and Pre-Config](##Installation-and-Pre-Config)
-    - [Clone](##Clone)
-    - [Pre-Config Language](##Pre-Config-Language)
-- [Test Suite Run](##Test-Suite-Run)
-    - [Docker](###Docker)
-    - [MAVEN](###Maven-Run)
-- [Allure Test Report](##Allure-Test-Report)
-- [Test Categories / Coverage](##Test-Categories/Coverage)
+- [Prerequisites](#Prerequisites)
+- [Technical Stack](#Technical-Stack)
+- [Installation and Pre-Config](#Installation-and-Pre-Config)
+    - [Clone](#Clone)
+    - [Pre-Config Language](#Pre-Config-Language)
+- [Test Suite Run](#Test-Suite-Run)
+    - [Docker](#Docker)
+    - [MAVEN](#Maven-Run)
+- [Allure Test Report](#Allure-Test-Report)
+- [Test Categories / Coverage](#Test-Categories/Coverage)
 
 ## Prerequisites
 
