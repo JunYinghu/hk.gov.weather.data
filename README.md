@@ -11,9 +11,9 @@ test cases runner has been tested on Window
 
 - [Prerequisites](#Prerequisites)
 - [Technical Stack](#Technical-Stack)
-- [Installation and Pre-Config](#Installation-and-Pre-Config)
+- [Installation and Pre-Config](#Clone-and-PreConfig)
     - [Clone](#Clone)
-    - [Pre-Config Language](#Pre-Config-Language)
+    - [Pre-Config Language](#PreConfig-Language)
 - [Test Suite Run](#Test-Suite-Run)
     - [Docker](#Docker)
     - [MAVEN](#Maven-Run)
@@ -37,14 +37,14 @@ Reference to following libraries / frameworks
 - Testng 7.3.0
 - Allure Report
 
-## Clone and Pre-Config
+## Clone and PreConfig
 
 ### Clone
 
 - Simply clone report use your own way from
   https://github.com/JunYinghu/appium-test-automation.git
 
-### Pre-Config Language
+### PreConfig Language
 
 You may config the language. It is very flexible way to give language you want
 
