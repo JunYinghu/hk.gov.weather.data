@@ -10,15 +10,15 @@ test cases runner has been tested on Window
 ## Table of Contents
 
 - [Prerequisites](##Prerequisites)
-- [Technical Stack](##Technical Stack)
-- [Installation and Pre-Config](##Installation and Pre-Config)
+- [Technical Stack](##Technical-Stack)
+- [Installation and Pre-Config](##Installation-and-Pre-Config)
     - [Clone](##Clone)
-    - [Pre-Config Language](##Pre-Config Language)
+    - [Pre-Config Language](##Pre-Config-Language)
 - [Test Case Run](##Test Case Run)
     - [Docker](###Docker)
     - [MAVEN](###Maven Run)
-- [Allure Test Report](##Allure Test Report)
-- [Test Categories / Coverage](##Test Categories/Coverage)
+- [Allure Test Report](##Allure-Test-Report)
+- [Test Categories / Coverage](##Test-Categories/Coverage)
 
 ## Prerequisites
 
@@ -84,12 +84,12 @@ cd hk.gov.weather.data/src/test/resources/testng/testng_suite.xml
 
 ## Allure Test Report
  - After test cases are executed completely, you may run the following command to see test result.
-
+ - Start Allure Server and View Report 
 ```
    cd hk.gov.weather.data 
    mvn io.qameta.allure:allure-maven:serve
 ```
-
+ - Generating Allure report in <target> folder 
 ```
    cd hk.gov.weather.data 
    mvn io.qameta.allure:allure-maven:report
