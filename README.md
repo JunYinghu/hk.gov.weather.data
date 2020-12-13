@@ -14,9 +14,9 @@ test cases runner has been tested on Window
 - [Installation and Pre-Config](##Installation-and-Pre-Config)
     - [Clone](##Clone)
     - [Pre-Config Language](##Pre-Config-Language)
-- [Test Case Run](##Test Case Run)
+- [Test Suite Run](##Test-Suite-Run)
     - [Docker](###Docker)
-    - [MAVEN](###Maven Run)
+    - [MAVEN](###Maven-Run)
 - [Allure Test Report](##Allure-Test-Report)
 - [Test Categories / Coverage](##Test-Categories/Coverage)
 
@@ -53,11 +53,11 @@ cd hk.gov.weather.data/src/test/resources/testng/testng_suite.xml
 <parameter name="language" value="sc"/>
 ```
 
-## Test Case Run
+## Test Suite Run
 
 - Run desired command as the following approaches
 
-### (Docker)
+### Docker
 
 #### Run Smoke Test
 
@@ -83,13 +83,17 @@ cd hk.gov.weather.data/src/test/resources/testng/testng_suite.xml
 ```
 
 ## Allure Test Report
- - After test cases are executed completely, you may run the following command to see test result.
- - Start Allure Server and View Report 
+
+- After test cases are executed completely, you may run the following command to see test result.
+- Start Allure Server and View Report
+
 ```
    cd hk.gov.weather.data 
    mvn io.qameta.allure:allure-maven:serve
 ```
- - Generating Allure report in <target> folder 
+
+- Generating Allure report in <target> folder
+
 ```
    cd hk.gov.weather.data 
    mvn io.qameta.allure:allure-maven:report
