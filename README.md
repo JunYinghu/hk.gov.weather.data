@@ -18,7 +18,7 @@ test cases runner has been tested on Window
     - [Docker](#Docker)
     - [MAVEN](#Maven-Run)
 - [Allure Test Report](#Allure-Test-Report)
-- [Test Categories/Coverage](#Test-Categories&Coverage)
+- [Test Categories/Coverage](#Test-Categories-and-Coverage)
 
 ## Prerequisites
 
@@ -100,7 +100,7 @@ cd hk.gov.weather.data/src/test/resources/testng/testng_suite.xml
    cd target\site\allure-maven-plugin\index.html
 ```
 
-## Test Categories&Coverage
+## Test Categories and Coverage
 
 ### Smoke API Test
 
