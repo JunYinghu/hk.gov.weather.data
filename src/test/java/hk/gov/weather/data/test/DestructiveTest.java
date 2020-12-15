@@ -83,8 +83,6 @@ public class DestructiveTest extends BaseAPICall {
 
     @Test(description = "to verify return error message as per invalid path parameter")
     @Description("this case expect error message saying page not found")
-    @Issue("System should not return current weather report - " +
-            "actual: it returns either page not found or current weather report in english ")
     @Severity(SeverityLevel.NORMAL)
     public void TC3_validates_message_page_not_found_invalid_path_parameter() {
         String exceptionMessage = "Expectation failed. expected message (request using invalid path weather): \n" +

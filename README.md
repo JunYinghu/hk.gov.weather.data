@@ -49,7 +49,7 @@ Reference to following libraries / frameworks
 You may config the language. It is very flexible way to give language you want
 
 ```
-cd hk.gov.weather.data/src/test/resources/testng/testng_suite.xml
+cd hk.gov.weather.data/src/test/resources/testng/regression_suite.xml
 <parameter name="language" value="sc"/>
 ```
 
