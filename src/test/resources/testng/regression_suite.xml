@@ -3,7 +3,7 @@
 <!-- below parameters can be fetched from jenkins -->
 <suite name="Current Weather Report">
     <parameter name="language"
-               value="sc"/> <!-- default en (English), the value can be tc (Traditional Chinese),sc (Simplified Chinese) -->
+               value="tc"/> <!-- default en (English), the value can be tc (Traditional Chinese),sc (Simplified Chinese) -->
     <parameter name="pathParameter" value="weather"/> <!-- current test script only available for weather-->
     <suite-files>
         <suite-file path="testng_smokeTest.xml"/>
