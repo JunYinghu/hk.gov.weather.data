@@ -2,10 +2,12 @@
 
 # Introduction
 
-This repo holds the code for assignment <HongKong Observatory> API <Current Weather Report>testing
+This repo holds the code for assignment <HongKong Observatory> API <Current Weather Report> testing.
 
-It is divided into smoke , destructive test covering api basic negative and positive as well as performance testing All
-test cases runner has been tested on Window
+It is divided into smoke , destructive test covering api basic negative and positive.
+You may refer to the following [Test Categories/Coverage](#Test-Categories-and-Coverage) session for details.
+
+All test cases have been tested on Window 10.
 
 ## Table of Contents
 
@@ -19,14 +21,15 @@ test cases runner has been tested on Window
     - [MAVEN](#Maven-Run)
 - [Allure Test Report](#Allure-Test-Report)
 - [Test Categories/Coverage](#Test-Categories-and-Coverage)
+- [Optimization In Future](#Optimization-In-Future)
 
 ## Prerequisites
 
 You will need:
 
-- java 11 and above
-- maven 3.6.3
-- Docker 19.03.13
+- Java 11 and above
+- Maven 7.3.0
+- Docker 19.03.13 and above
 
 ## Technical Stack
 
@@ -35,7 +38,7 @@ Reference to following libraries / frameworks
 - Rest Assured 4.2.0
 - Json Schema validator 4.3.2
 - Testng 7.3.0
-- Allure Report
+- Allure Report 2.13.6
 
 ## Clone and PreConfig
 
@@ -46,11 +49,12 @@ Reference to following libraries / frameworks
 
 ### PreConfig Language
 
-You may config the language. It is very flexible way to give language you want
+You may config the language in <regression_suite.xml>. It is very flexible way to give language you want.
+The default language is "tc".
 
 ```
 cd hk.gov.weather.data/src/test/resources/testng/regression_suite.xml
-<parameter name="language" value="sc"/>
+<parameter name="language" value="tc"/>
 ```
 
 ## Test Suite Run
@@ -118,3 +122,9 @@ cd hk.gov.weather.data/src/test/resources/testng/regression_suite.xml
 - Negative Test - Not Allowed Method
 - Negative Test - Invalid QueryParameter verification combination
 - Negative Test - Invalid PathParameter verification combination
+
+## Optimization In Future
+- Apply common method in Framework
+- Standardize validation format   
+- Introduce java log
+- Integrate performance test
