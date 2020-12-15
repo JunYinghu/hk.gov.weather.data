@@ -41,8 +41,8 @@ Reference to following libraries / frameworks
 
 ### Clone
 
-- Simply clone report use your own way from
-  https://github.com/JunYinghu/appium-test-automation.git
+- Simply clone report use your own way from  
+  https://github.com/JunYinghu/hk.gov.weather.data.git
 
 ### PreConfig Language
 
